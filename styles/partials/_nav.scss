@@ -1,0 +1,57 @@
+.headerTop {
+	position: fixed;
+	background-color: white;
+	right: 0;
+	left: 0;
+	margin: 0;
+	z-index: 10;
+}
+
+header .flexBox {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.headingContainer {
+	h2 {
+		@include firstFont(28px)
+		letter-spacing: 3px;
+		text-transform: lowercase;
+	}
+}
+
+.navContainer {
+	width: 500px;
+	@include breakPoint(medium) {
+		display: none;
+	}
+		ul {
+			display: flex;
+			list-style: none;
+			margin-top: 32px;
+			flex-direction: row;	
+			justify-content: flex-end;	
+				a {	
+					@include secondFont(16px)
+					text-decoration: none;
+					padding: 8px;
+					&:hover {
+						color: $thirdColor;
+					}
+				}
+		}
+}
+
+.navMobile {
+	display: none;
+	@include breakPoint(medium) {
+		display: block;
+	}
+	.menu {
+		display: none;
+	}
+	.show {
+		display: block;
+	}
+}

@@ -1,0 +1,58 @@
+.aboutMe {
+	margin-top: 75px;
+			.flexBox {
+			display: flex;
+			flex-direction: row-reverse;
+			// this is my medium break point
+			@include breakPoint(medium) {
+				flex-direction: column;
+			}
+			.aboutText {
+				width: 50%;
+				display: flex;
+				flex-direction: column;
+			// this is my medium break point
+			@include breakPoint(medium) {
+				margin: 0 auto;
+			}
+			h2 {
+				@include firstFont(40px);
+			}
+			p {
+				@include secondFont(15px);
+				text-align: justify;
+			}
+			input[type=submit] {
+				@include secondFont(15px);
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				background: #f5f5f0;
+				border: 1px solid black;
+				padding: 20px;
+				margin-top: 20px;
+				width: 30%;
+				text-align: center;
+				// this is my medium break point
+				@include breakPoint(medium) {
+					@include secondFont(15px)
+					width: 40%;
+					text-transform: uppercase;
+					letter-spacing: 2.5px;
+					padding: 10px;
+					text-align: center;
+				}
+			}
+		}
+	}	
+}		
+.aboutMe .aboutImage {
+	width: 50%; 
+	img {
+		max-width: 100%;
+		padding: 20px; 
+	@include breakPoint(medium) {
+		display: none;	
+	}
+}
+
+}

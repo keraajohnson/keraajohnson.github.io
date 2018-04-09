@@ -2,22 +2,420 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>YNP</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto:300,400|Pacifico" rel="stylesheet" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="styles/style.css"/>
 </head>
-<style>
-	:root {
-		--heading-color: goldenrod;
-	}
-
-	h1 {
-		color: var(--heading-color);
-	}
-</style>
 <body>
-	<h1>Hello World</h1>
-	<h2>My Name Is Kera </h2>
+	<!-- header starts -->
+	<header>
+		<!-- headerTop starts -->
+		<div class="headerTop">
+			<div class="wrapper flexBox">
+				<!-- headingContainer starts -->
+				<div class="headingContainer">
+					<h2>#travelgirl</h2>
+				</div>
+				<!-- navContainer starts -->
+				<div class="navContainer">
+					<ul>
+						<li><a href="#about">About Me</a></li>
+						<li><a href="#gallery">Pictures</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#hiking">Hikes</a></li>
+						<li><a href="#insta">#insta</a></li>
+						<li><a href="#events">Events</a></li>
+					</ul>
+				</div> 
+				<div class="navMobile">
+					<div class="hamburger">
+						<i class="fas fa-bars"></i>
+					</div>
+					<ul class="menu">
+						<li><a href="#about">About Me</a></li>
+						<li><a href="#gallery">Pictures</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#hiking">Hikes</a></li>
+						<li><a href="#insta">#insta</a></li>
+						<li><a href="#events">Events</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- headerTop ends -->
+		<!-- headerMain starts -->
+		<div class="headerMain">
+			<div class="wrapper">
+				<!-- title container starts -->
+				<div class="titleContainer">
+					<h1>How wild it was</h1>
+					<h3>My solo hiking trip through yellowstone national park</h3>
+				</div>
+			</div>	
+		</div>
+		<!-- headerMain ends -->
+	</header>
+	<!-- header ends -->
+	<!-- main starts -->
+	<main>
+		<!-- aboutMe starts -->
+		<section class="aboutMe" id="about">
+			<div class="wrapper flexBox">
+				<!-- aboutText starts (heading, copy, button) -->
+				<div class="aboutText">
+					<h2>About Me.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi et adipisci rerum doloribus quibusdam eligendi quam, repellat, quod consequatur veniam nemo repellendus nisi reprehenderit praesentium recusandae optio possimus similique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minus maiores, fugit corporis. In tempora, iure neque corporis expedita. Maiores autem iusto quasi illo adipisci debitis nam, a qui dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem expedita minus sapiente facere quisquam mollitia dignissimos illum magni pariatur perferendis corporis voluptatem delectus quas rerum numquam, sequi ducimus repellat rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<input type="submit" value="Learn More">
+				</div>
+				<!-- about image starts -->
+				<div class="aboutImage">
+					<img src="images/about-image.jpg" alt="Young woman standing on the edge of a mountain in Yellowstone National Park on a cloudy day">
+				</div>
+			</div>
+		</section>
+		<!-- about me ends, hiking fun begins -->
+		<section class="hikingFun" id="hiking">
+			<!-- <div class="wrapper wrapper_hikingFun"> -->
+				<div class="hikingBenefits">
+					<div class="wrapper">
+						<!-- walking box -->
+						<div class="walking">
+							<img src="images/backpack.svg" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minus quis corporis, pariatur, ipsa voluptates nobis deserunt iure libero, quae fugiat nesciunt nulla? Dolores mollitia omnis blanditiis esse placeat. Minus?</p>
+						</div>
+						<!-- hiking signs box -->
+						<div class="hikingSigns">
+							<img src="images/signs.svg" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dicta adipisci sint neque suscipit at minima assumenda perferendis commodi error modi, harum nam libero doloribus ullam corporis autem magni. At!</p>
+						</div>
+						<!-- fresh air box -->
+						<div class="freshAir">
+							<img src="images/mountains.svg" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, corporis recusandae dolores minus officiis nihil, qui libero similique, laboriosam ab sit omnis non magnam, sint. Vel hic, laborum pariatur facilis.</p>
+						</div>
+					</div>
+				</div>
+				<!-- hiking image  -->
+				<div class="hikingImage">
+					<img src="images/IMG_0300.jpg" alt="">
+				</div>
+			<!-- </div> -->
+		</section>
+		<!-- imageGallery starts -->
+		<section class="imageGallery" id="gallery">
+			<div class="wrapper">
+				<!-- galleryText starts -->
+				<div class="galleryText">
+					<h2>Take A Peek</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eius optio, inventore cumque! Magni amet vero excepturi voluptates nam quibusdam at, non deleniti reprehenderit ea libero ullam illo, architecto ipsum.</p>
+				</div>
+				<div class="columns">
+				<!-- columnOne starts -->
+					<div class="box1">
+					<div class="columnOne">
+						<div class="img imageOne">
+							<img src="images/IMG_0311.jpg" alt="">
+						</div>
+						<div class="img imageTwo">
+							<img src="images/IMG_0165.jpg" alt="">
+						</div>
+						<div class="img imageThree">
+							<img src="images/IMG_0471.jpg" alt="">
+						</div>
+					</div> <!-- closes columnOne -->
+					<!-- columnTwo starts -->
+					<div class="columnTwo">
+						<div class=" img imageOne">
+							<img src="images/IMG_0191.jpg" alt="">
+						</div>
+						<div class="img imageTwo">
+							<img src="images/IMG_0203.jpg" alt="">
+						</div>
+						<div class="img imageThree">
+							<img src="images/IMG_0234.jpg" alt="">
+						</div>
+					</div> <!-- closes columnTwo -->
+					</div>
+				<!-- columnThree starts -->
+					<div class="box2">
+					<div class="columnThree">
+						<div class="img imageOne">
+							<img src="images/IMG_0300.jpg" alt="">
+						</div>
+						<div class="img imageTwo">
+							<img src="images/IMG_0443.jpg" alt="">
+						</div>
+						<div class="img imageThree">
+							<img src="images/IMG_0378.jpg" alt="">
+						</div>
+					</div> <!-- closes columnThree -->
+				<!-- columnFour starts -->
+					<div class="columnFour">
+						<div class="img imageOne">
+							<img src="images/IMG_0399.jpg" alt="">
+						</div>
+						<div class="img imageTwo">
+							<img src="images/IMG_0416.jpg" alt="">
+						</div>
+						<div class="img imageThree">
+							<img src="images/IMG_0612.jpg" alt="">
+						</div>
+					</div> <!-- closes columnFour -->
+					</div>
+				</div>
+			</div>
+		</section> <!-- closes image gallery -->
+		<!-- blog starts -->
+		<section class="blogPosts" id="blog">
+			<div class="wrapper">
+				<!-- blog text -->
+				<div class="blogHeading">
+					<h2>Travel Journal</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, maxime non ea aspernatur laboriosam maiores, asperiores ut ipsum architecto distinctio commodi quos possimus, excepturi, sapiente eos neque alias voluptatum. Tenetur.</p>
+				</div>
+				<div class="blogBoxes">
+					<!-- blog one box -->
+					<div class="blog blogOne">
+						<h4>01.</h4>
+						<h3>Oh no! A Bear!</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minus veritatis dolores sint sapiente odio, reiciendis unde molestiae quis? Voluptates sit quos mollitia. Veniam, molestias excepturi vel, repellendus voluptatibus itaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolor cupiditate explicabo voluptates omnis, asperiores magnam, beatae soluta, eos mollitia ducimus nostrum sint repellendus modi esse, vitae fuga nesciunt autem.</p>
+						<a href="#">Read More</a>
+					</div>
+					<!-- blog two box -->
+					<div class="blog blogTwo">
+						<h4>02.</h4>
+						<h3>But where do I go pee?</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minus veritatis dolores sint sapiente odio, reiciendis unde molestiae quis? Voluptates sit quos mollitia. Veniam, molestias excepturi vel, repellendus voluptatibus itaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolor cupiditate explicabo voluptates omnis, asperiores magnam, beatae soluta, eos mollitia ducimus nostrum sint repellendus modi esse, vitae fuga nesciunt autem.</p>
+						<a href="#">Read More</a>
+					</div>
+					<!-- blog three box -->
+					<div class="blog blogThree">
+						<h4>03.</h4>
+						<h3>Wow, I Smell Terrible</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minus veritatis dolores sint sapiente odio, reiciendis unde molestiae quis? Voluptates sit quos mollitia. Veniam, molestias excepturi vel, repellendus voluptatibus itaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolor cupiditate explicabo voluptates omnis, asperiores magnam, beatae soluta, eos mollitia ducimus nostrum sint repellendus modi esse, vitae fuga nesciunt autem.</p>
+						<a href="#">Read More</a>
+					</div>
+					<!-- blog four box -->
+					<div class="blog blogFour">
+						<h4>04.</h4>
+						<h3>No Wonder I'm Doing This Alone</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minus veritatis dolores sint sapiente odio, reiciendis unde molestiae quis? Voluptates sit quos mollitia. Veniam, molestias excepturi vel, repellendus voluptatibus itaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolor cupiditate explicabo voluptates omnis, asperiores magnam, beatae soluta, eos mollitia ducimus nostrum sint repellendus modi esse, vitae fuga nesciunt autem.</p>
+						<a href="#">Read More</a>
+					</div>
+					<!-- blog five box -->
+					<div class="blog blogFive">
+						<h4>05.</h4>
+						<h3>My Bag Weighs More Than Me</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minus veritatis dolores sint sapiente odio, reiciendis unde molestiae quis? Voluptates sit quos mollitia. Veniam, molestias excepturi vel, repellendus voluptatibus itaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolor cupiditate explicabo voluptates omnis, asperiores magnam, beatae soluta, eos mollitia ducimus nostrum sint repellendus modi esse, vitae fuga nesciunt autem.</p>
+						<a href="#">Read More</a>
+					</div>
+					<!-- blog six box -->
+					<div class="blog blogSix">
+						<h4>06.</h4>
+						<h3>This Mountain is Big</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minus veritatis dolores sint sapiente odio, reiciendis unde molestiae quis? Voluptates sit quos mollitia. Veniam, molestias excepturi vel, repellendus voluptatibus itaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolor cupiditate explicabo voluptates omnis, asperiores magnam, beatae soluta, eos mollitia ducimus nostrum sint repellendus modi esse, vitae fuga nesciunt autem.</p>
+						<a href="#">Read More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- best hiking spots starts -->
+		<section class="hikingSpots" id="insta">
+			<div class="wrapper">
+				<!-- text  -->
+				<div class="spotsText">
+					<h2>Best #insta Spots</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eius optio, inventore cumque! Magni amet vero excepturi voluptates nam quibusdam at</p>
+				</div>
+				<div class="hikingFlex">
+				<!-- hiking spot one -->
+					<div class="spot spotOne">
+						<img src="images/lamar-valley 2.jpg" alt="">
+						<p>Lamar Valley</p>
+					</div>
+					<!-- hiking spot two -->
+					<div class="spot spotTwo">
+						<img src="images/entry-way 2.jpg" alt="">
+						<p>Roosevelt's Entryway</p>
+					</div>
+					<!-- hiking spot three -->
+					<div class="spot spotThree">
+						<img src="images/geyser 2.jpg" alt="">
+						<p>Campbell Geyser</p>
+					</div>
+					<!-- hiking spot four -->
+					<div class="spot spotFour">
+						<img src="images/madison-river 2.jpg" alt="">
+						<p>West Yellowstone, Madison River</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- hiking spots ends -->
+		<section class="graphics">
+			<div class="wrapper flexGraphics">
+				<div class="graphic firstGraphic">
+					<img src="images/flashlight.svg" alt="">
+				</div>
+				<div class="graphic secondGraphic">
+					<img src="images/tent.svg" alt="">
+				</div>
+				<div class="graphic thirdGraphic">
+					<img src="images/camera.svg" alt="">
+				</div>
+				<div class="graphic fourthGraphic">
+					<img src="images/wild.svg" alt="">
+				</div>
+				<div class="graphic fifthGraphic">
+					<img src="images/map.svg" alt="">
+				</div>
+			</div>
+		</section>
+		<!-- events section starts -->
+		<section class="events" id="events">
+			<div class="wrapper">
+				<!-- text -->
+				<div class="eventsText">
+					<h2>Yellowstone Events</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eius optio, inventore cumque! Magni amet vero excepturi voluptates nam quibusdam at</p>
+				</div>
+				<div class="eventsFlex">
+					<!-- event one -->
+					<div class="event eventOne">
+						<img src="images/hikers.jpg" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati inventore</p>
+						<div class="eventDate">
+							<p>15</p>
+							<p>SEPT</p>
+						</div>
+					</div>
+					<!-- event two -->
+					<div class="event eventTwo">
+						<img src="images/bear.jpg" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati inventore</p>
+						<div class="eventDate">
+							<p>15</p>
+							<p>OCT</p>
+						</div>
+					</div>
+					<!-- event three -->
+					<div class="event eventThree">
+						<img src="images/night-hiking.jpg" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati inventore</p>
+						<div class="eventDate">
+							<p>15</p>
+							<p>NOV</p>
+						</div>
+					</div>
+					<!-- event four -->
+					<div class="event eventFour">
+						<img src="images/kayak.jpg" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati inventore</p>
+						<div class="eventDate">
+							<p>15</p>
+							<p>JAN</p>
+						</div>
+					</div>
+				</div>
+				<div class="readMore">
+					<input type="submit" value="Read More">
+				</div>
+			</div>
+		</section>
+		<!-- newsletter section starts -->
+		<section class="newsletter">
+			<!-- newsletterImage starts -->
+			<div class="newsletterImage">
+				<img src="images/IMG_0611.jpg" alt="">
+			</div>
+			<!-- newsletterForm starts -->
+			<div class="newsletterForm">
+				<div class="wrapper">
+					<!-- newsletterGraphic starts -->
+					<div class="newsletterGraphic">
+						<img src="images/camp.svg" alt="">
+					</div>
+					<h2>Never Hike Alone Again</h2>
+					<p>Sign up for my newsletter</p>
+					<div class="form">
+						<input type="email" placeholder="type your e-mail">
+						<input type="submit" value="subscribe">
+					</div>
+					<a href="#" class="noThanks">No thanks, I'd like a bear to eat me... All alone, in the woods... Wait, what?</a>
+				</div>
+			</div>
+		</section> <!-- newsletter section ends -->
+	</main>
+	<!-- main section ends, footer begins -->
+	<footer>
+		<div class="wrapper">
+			<div class="footerTop footerFlex">
+				<div class="footerBox contactUs">
+					<h2>Let's Chat</h2>
+					<p>Actually, let's not. sit amet, consectetur adipisicing elit. Quae quisquam totam, eaque maxime quos itaque distinctio officia error autem, minima accusantium molestias impedit necessitatibus eius, ipsa debitis! Quis neque, corrupti?</p>
+						<div class="footerIcons">
+							<div class="facebookIcon">
+								<a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+							</div>
+							<div class="twitterIcon">
+								<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+							</div>
+							<div class="linkedinIcon">
+								<a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+							</div>
+							<div class="emailIcon">
+								<i class="fas fa-laptop"></i>
+							</div>
+						</div>
+				</div>		
+				<div class="footerBox aboutUs">
+					<h2>Learn More</h2>
+					<p>What else do you need to know? sit amet, consectetur adipisicing elit. Tempora recusandae, ab harum doloremque! Unde nesciunt eius, modi, saepe pariatur, tempore sequi id praesentium illum rerum suscipit minima quos accusamus odio.</p>
+					<a href="#">Read More</a>
+				</div>
+				<div class="footerBox helpfulLinks">
+					<h2>Bear Safety</h2>
+					<p>Avoid Them. Don't smell good. dolor sit amet, consectetur adipisicing elit. Architecto natus autem odit suscipit consequuntur adipisci maxime fuga blanditiis, quos, aliquam unde voluptates qui vero quibusdam dolores facilis cum quidem, nostrum!</p>
+				</div>
+			</div>
+		</div>
+		<div class="footerBottom">
+			<div class="wrapper">
+				<p>Designed by Kera</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+	<script>
+		$(function(){
+			$('.blogBoxes').flickity({
+			  // options
+			  cellAlign: 'left',
+			  // contain: true,
+			  cellSelector: '.blog',
+			  wrapAround: true
+			});	
+			$('ul li a').smoothScroll({
+				offset: 100,
+				speed: 1000
+			});
+			$('.hamburger').on('click', function(){
+				// toggle class show on the menu
+				$('.menu').toggleClass('show');
+			});
+
+			$('.exit-responsive').on('click', function(){
+				// toggle class show on the menu
+				$('.menu').toggleClass('show');
+			});
+		});
+	</script>
 </body>
 </html>

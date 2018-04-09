@@ -1,0 +1,77 @@
+.imageGallery {
+	margin-top: 30px;
+	.galleryText h2 {
+		@include firstFont(35px)
+		margin: 5px 0;
+	}
+	.galleryText p {
+		@include secondFont(12px)
+		font-weight: 300;
+	}
+	.columns {
+		width: 100%;
+		display: flex;
+		margin-top: 25px;
+		.box1 {
+			display: flex;
+			flex-wrap: wrap;
+			width: 50%;
+			@include breakPoint(medium) {
+				width: 100%;
+			}
+			.columnOne {
+				width: calc(50% - 20px);
+				margin: 0 10px;
+				@include breakPoint(medium) {
+					width: calc(100% - 20px);
+				}
+					img {
+						max-width: 100%;	
+						margin: 20px 0;
+				}
+			}
+			.columnTwo {
+				width: calc(50% - 20px);
+				margin: 0 10px;
+				@include breakPoint(medium) {
+					width: calc(100% - 20px);
+				}
+				img {
+					max-width: 100%;
+					margin: 20px 0;
+				}
+			}
+		}
+		.box2 {
+			display: flex;
+			width: 50%;
+			flex-wrap: wrap;
+			@include breakPoint(medium) {
+				width: 100%;
+			}
+			.columnThree {
+				width: calc(50% - 20px);
+				margin: 0 10px;
+				@include breakPoint(medium) {
+					width: calc(100% - 20px);
+				}
+				img {
+					max-width: 100%;
+					margin: 20px 0;
+				}
+			}
+			.columnFour {
+				width: calc(50% - 20px);
+				margin: 0 10px;
+				@include breakPoint(medium) {
+					width: calc(100% - 20px);
+				}
+				img {
+					max-width: 100%;
+					margin: 20px 0;
+				}
+			}
+		}
+	}
+}
+

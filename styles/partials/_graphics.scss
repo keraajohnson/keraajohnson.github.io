@@ -1,0 +1,14 @@
+.graphics {
+	background: $fourthColor;
+	.flexGraphics {
+		display: flex;
+		justify-content: center;
+		.graphic {
+			width: 8%;
+			margin: 15px 75px;
+				img {
+					max-width: 100%;
+				}
+		}
+	}
+}

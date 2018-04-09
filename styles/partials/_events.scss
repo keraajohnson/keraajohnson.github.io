@@ -1,0 +1,89 @@
+.events {
+	margin-top: 20px;
+		.eventsText {
+			display: flex;
+			// this is my medium break point
+			@include breakPoint(medium) {
+				flex-direction: column;
+				text-align: center;
+			}
+			h2 {
+				@include firstFont(40px);
+				width: 40%;
+				// this is my medium break position
+				@include breakPoint(medium) {
+					width: 100%;
+				}
+			}
+			p {
+				@include secondFont (12px);
+				width: 60%;
+				margin: auto;
+				font-weight: 300;
+				// this is my medum break position
+				@include breakPoint(medium) {
+					width: 80%;
+					margin-bottom: 25px;
+				}
+			}
+		}
+		.eventsFlex {
+			display: flex;
+			// this is my medium break point
+			@include breakPoint(medium) {
+				// flex-direction: column;
+				align-items: center;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.event {
+				width: 25%;
+				margin: 0 10px;
+				position: relative;
+				z-index: -1;
+				@include breakPoint(medium) {
+					width: calc(50% - 20px);
+				}
+				img {
+					max-width: 100%;
+				}
+				p {
+					@include secondFont(10px);
+				}
+			}
+			.eventDate {
+				// border: 1px solid black;
+				background: white;
+				width: 20%;
+				max-width: 20%;
+				text-align: center;
+				// box-shadow: 30px 30px 60px 11px rgba(0,0,0,0.58);
+				position: absolute;
+				top: 10px;
+				left: 10px;
+					p:nth-child(1) {
+						font-size: 15px;
+					}
+			}
+
+		} .readMore {
+			display: flex;
+			justify-content: center;
+				input[type=submit] {
+				@include secondFont(15px);
+				text-transform: uppercase;
+				background: black;
+				color: white;
+				padding: 15px;
+				margin-top: 20px;
+				&:hover {
+					background: $secondColor;
+				}
+				&:active {
+					background: $thirdColor;
+				}
+		}
+		
+		}
+		
+}

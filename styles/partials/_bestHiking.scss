@@ -1,0 +1,54 @@
+.hikingSpots {
+	.spotsText {
+		display: flex;
+		align-items: center;
+		// this is my medium break position
+		@include breakPoint(medium) {
+			flex-direction: column;
+		}
+		h2 {
+			@include firstFont(40px);
+			width: 40%;
+			// this is my medium break point 
+			@include breakPoint(medium) {
+				width: 100%;
+				text-align: center;
+			}
+		}
+
+		p {
+			@include secondFont(12px);
+			width: 60%;
+			// this is my medium break point 
+			@include breakPoint(medium) {
+				width: 80%;
+				text-align: center;
+			}
+		}
+	}
+	.hikingFlex {
+		display: flex;
+		width: 100%;
+		@include breakPoint(medium) {
+			// flex-direction: column;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+			.spot {
+				width: 25%;
+				margin: 20px;
+				// this is my medium breakpoint
+				@include breakPoint(medium) {
+					width: calc(50% - 40px);
+				}
+					img {
+						max-width: 100%;
+					}
+					p {
+						@include secondFont(14px);
+						text-align: center;
+					}
+		}
+		
+	}
+}
