@@ -35,7 +35,7 @@
 				// this is my medium break point
 				@include breakPoint(medium) {
 					@include secondFont(15px)
-					width: 40%;
+					width: 100%;
 					text-transform: uppercase;
 					letter-spacing: 2.5px;
 					padding: 10px;

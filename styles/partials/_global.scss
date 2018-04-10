@@ -3,10 +3,12 @@
 $firstColor: #193446;
 $secondColor: #36384C ;
 $thirdColor: #d1d6da;
+$thirdColorO: rgba(7, 15, 21,0.97);
 $fourthColor: #e8eaec;
 $blackColor: #323339;
 $greyColor: #5e707d;
 $footerBottomColor: #070f15;
+$hoverBackground: rgba(250,250,250,0.5);
 
 @mixin firstFont($fontSize) {
 	font-size: $fontSize;
@@ -40,6 +42,6 @@ $footerBottomColor: #070f15;
     @media (max-width: 840px) { @content; }
   }
   @else if $point == small {
-    @media (max-width: 480px)  { @content; }
+    @media (max-width: 568px)  { @content; }
   }
 }

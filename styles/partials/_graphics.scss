@@ -1,13 +1,54 @@
 .graphics {
-	background: $fourthColor;
+	background: $thirdColor;
+	@include breakPoint(small) {
+		display: none;
+	}
 	.flexGraphics {
-		display: flex;
-		justify-content: center;
-		.graphic {
-			width: 8%;
-			margin: 15px 75px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			// this is my medium break point
+			@include breakPoint(medium) {
+				flex-direction: column;
+			}
+		.graphicGroup {
+			width: 10%;
+		}
+		.graphicGroupOne,
+		.graphicGroupThree {
+			display: flex;
+			justify-content: space-between;
+			width: 33.3%;
+			// this is my medium break point
+			@include breakPoint(medium) {
+				width: 50%;
+				margin: 0 auto;
+			}
 				img {
-					max-width: 100%;
+					width: 120%;
+					margin: 10px;
+					// this is my medium break point
+					@include breakPoint(medium) {
+						margin: 0;
+					}
+				}
+		}
+		.graphicGroupTwo {
+			display: flex;
+			justify-content: center;
+			width: 15%;
+			// this is my medium break point
+			@include breakPoint(medium) {
+				width: 50%;
+				margin: 0 auto;
+			}
+				img {
+					width: 110%;
+					margin: 15px;
+					// this is my medium break point
+					@include breakPoint(medium) {
+						margin: 0;
+					}
 				}
 		}
 	}

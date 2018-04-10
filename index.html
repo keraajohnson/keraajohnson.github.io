@@ -35,7 +35,8 @@
 						<i class="fas fa-bars"></i>
 					</div>
 					<ul class="menu">
-						<li><a href="#about">About Me</a></li>
+						<li class="exit-responsive"><i class="fas fa-times"></i></li>
+						<li class><a href="#about">About Me</a></li>
 						<li><a href="#gallery">Pictures</a></li>
 						<li><a href="#blog">Blog</a></li>
 						<li><a href="#hiking">Hikes</a></li>
@@ -118,24 +119,30 @@
 					<div class="columnOne">
 						<div class="img imageOne">
 							<img src="images/IMG_0311.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 						<div class="img imageTwo">
 							<img src="images/IMG_0165.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 						<div class="img imageThree">
 							<img src="images/IMG_0471.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 					</div> <!-- closes columnOne -->
 					<!-- columnTwo starts -->
 					<div class="columnTwo">
 						<div class=" img imageOne">
 							<img src="images/IMG_0191.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 						<div class="img imageTwo">
 							<img src="images/IMG_0203.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 						<div class="img imageThree">
 							<img src="images/IMG_0234.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 					</div> <!-- closes columnTwo -->
 					</div>
@@ -144,24 +151,30 @@
 					<div class="columnThree">
 						<div class="img imageOne">
 							<img src="images/IMG_0300.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 						<div class="img imageTwo">
 							<img src="images/IMG_0443.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 						<div class="img imageThree">
 							<img src="images/IMG_0378.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 					</div> <!-- closes columnThree -->
 				<!-- columnFour starts -->
 					<div class="columnFour">
 						<div class="img imageOne">
 							<img src="images/IMG_0399.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 						<div class="img imageTwo">
 							<img src="images/IMG_0416.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 						<div class="img imageThree">
 							<img src="images/IMG_0612.jpg" alt="">
+							<div class="overlay"></div>
 						</div>
 					</div> <!-- closes columnFour -->
 					</div>
@@ -257,20 +270,26 @@
 		<!-- hiking spots ends -->
 		<section class="graphics">
 			<div class="wrapper flexGraphics">
-				<div class="graphic firstGraphic">
-					<img src="images/flashlight.svg" alt="">
+				<div class="graphicGroupOne graphicGroup">
+					<div class="graphic firstGraphic">
+						<img src="images/flashlight.svg" alt="">
+					</div>
+					<div class="graphic secondGraphic">
+						<img src="images/tent.svg" alt="">
+					</div>
 				</div>
-				<div class="graphic secondGraphic">
-					<img src="images/tent.svg" alt="">
+				<div class="graphicGroupTwo graphicGroup">
+					<div class="graphic thirdGraphic">
+						<img src="images/camera.svg" alt="">
+					</div>
 				</div>
-				<div class="graphic thirdGraphic">
-					<img src="images/camera.svg" alt="">
-				</div>
-				<div class="graphic fourthGraphic">
-					<img src="images/wild.svg" alt="">
-				</div>
-				<div class="graphic fifthGraphic">
-					<img src="images/map.svg" alt="">
+				<div class="graphicGroupThree graphicGroup">
+					<div class="graphic fourthGraphic">
+						<img src="images/wild.svg" alt="">
+					</div>
+					<div class="graphic fifthGraphic">
+						<img src="images/map.svg" alt="">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -392,13 +411,11 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
 	<script>
 		$(function(){
 			$('.blogBoxes').flickity({
 			  // options
-			  cellAlign: 'left',
-			  // contain: true,
+			  cellAlign: 'center',
 			  cellSelector: '.blog',
 			  wrapAround: true
 			});	
@@ -407,13 +424,11 @@
 				speed: 1000
 			});
 			$('.hamburger').on('click', function(){
-				// toggle class show on the menu
-				$('.menu').toggleClass('show');
+				$('.menu').fadeIn("slow");
 			});
 
 			$('.exit-responsive').on('click', function(){
-				// toggle class show on the menu
-				$('.menu').toggleClass('show');
+				$('.menu').fadeOut("slow");
 			});
 		});
 	</script>

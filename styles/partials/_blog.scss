@@ -30,14 +30,8 @@
 		}
 	}
 	.blogBoxes {
-		// display: flex;
-		// flex-direction: row;
 		width: 100%;
 		height: 450px;
-		// this is my medium break position
-		@include breakPoint(medium) {
-			flex-direction: column;
-		}
 	}
 
 	.blog {
@@ -50,6 +44,11 @@
 		@include breakPoint(medium) {
 			width: 50%;
 			margin: 10px;
+			height: 450px;
+		}
+		@include breakPoint(small) {
+			width: 100%;
+			height: 350px;
 		}
 			h4 {
 				@include thirdFont(20px)
