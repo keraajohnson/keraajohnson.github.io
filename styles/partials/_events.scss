@@ -40,7 +40,10 @@
 				width: 25%;
 				margin: 0 10px;
 				position: relative;
-				z-index: -1;
+				transition: all 1s ease;
+				&:hover {
+					transform: scale(1.1);
+				}
 				@include breakPoint(medium) {
 					width: calc(50% - 20px);
 				}
