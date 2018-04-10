@@ -645,7 +645,11 @@ header .flexBox {
         transform: scale(1.1); }
       @media (max-width: 840px) {
         .events .eventsFlex .event {
-          width: calc(50% - 20px); } }
+          width: calc(50% - 20px); }
+          .events .eventsFlex .event:hover {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1); } }
       .events .eventsFlex .event img {
         max-width: 100%; }
       .events .eventsFlex .event p {

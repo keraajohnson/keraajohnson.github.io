@@ -46,6 +46,9 @@
 				}
 				@include breakPoint(medium) {
 					width: calc(50% - 20px);
+					&:hover {
+						transform: scale(1)
+					}
 				}
 				img {
 					max-width: 100%;
