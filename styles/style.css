@@ -829,7 +829,8 @@ header .flexBox {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      width: 33.3%; }
+      width: 33.3%;
+      margin-top: 50px; }
       @media (max-width: 840px) {
         .graphics .flexGraphics .graphicGroupOne,
         .graphics .flexGraphics .graphicGroupThree {
@@ -850,7 +851,8 @@ header .flexBox {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      width: 15%; }
+      width: 15%;
+      margin-top: 40px; }
       @media (max-width: 840px) {
         .graphics .flexGraphics .graphicGroupTwo {
           width: 50%;
