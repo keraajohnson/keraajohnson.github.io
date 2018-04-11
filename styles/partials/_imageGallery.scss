@@ -25,12 +25,10 @@
 		}
 		.img {
 			position: relative;
-
-			&:hover .overlay {
-				opacity: 1;
-				transition: all 1s;
-
-			}
+				&:hover .overlay {
+					opacity: 1;
+					transition: all 1s;
+				}
 		}
 		.box1 {
 			display: flex;
