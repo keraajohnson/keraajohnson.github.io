@@ -325,7 +325,7 @@ header .flexBox {
     width: 100%; }
 
 .aboutMe {
-  margin-top: 75px; }
+  overflow: hidden; }
   .aboutMe .flexBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -373,7 +373,7 @@ header .flexBox {
         color: #323339;
         text-transform: uppercase;
         letter-spacing: 3px;
-        background: #f5f5f0;
+        background: white;
         border: 1px solid black;
         padding: 20px;
         margin-top: 20px;
@@ -391,6 +391,21 @@ header .flexBox {
             letter-spacing: 2.5px;
             padding: 10px;
             text-align: center; } }
+
+.aboutMe::after {
+  content: "";
+  position: relative;
+  z-index: -100;
+  top: -450px;
+  left: -110px;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 50%;
+  border-right: 0px solid transparent;
+  border-bottom: 500px solid rgba(232, 234, 236, 0.5);
+  border-left: 1550px solid transparent;
+  overflow: hidden; }
 
 .aboutMe .aboutImage {
   width: 50%; }
@@ -698,8 +713,7 @@ header .flexBox {
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px; }
+  display: flex; }
   .hikingFun .hikingBenefits {
     max-width: 50%;
     background: #d1d6da;

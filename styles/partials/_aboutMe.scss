@@ -1,5 +1,6 @@
 .aboutMe {
-	margin-top: 75px;
+	// margin-top: 75px;
+	overflow: hidden;
 			.flexBox {
 			display: flex;
 			flex-direction: row-reverse;
@@ -26,7 +27,7 @@
 				@include secondFont(15px);
 				text-transform: uppercase;
 				letter-spacing: 3px;
-				background: #f5f5f0;
+				background: white;
 				border: 1px solid black;
 				padding: 20px;
 				margin-top: 20px;
@@ -44,7 +45,25 @@
 			}
 		}
 	}	
-}		
+}
+
+.aboutMe::after {
+	content: "";
+	position: relative;
+	z-index: -100;
+	top: -450px;
+	left: -110px;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	height: 50%;
+	// border-top: 20px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 500px solid rgba(232,234,236,0.5);
+	border-left: 1550px solid transparent;
+	overflow: hidden;
+}
+
 .aboutMe .aboutImage {
 	width: 50%; 
 	img {
