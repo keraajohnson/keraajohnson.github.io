@@ -403,9 +403,12 @@ header .flexBox {
   width: 50%;
   height: 50%;
   border-right: 0px solid transparent;
-  border-bottom: 500px solid rgba(232, 234, 236, 0.5);
+  border-bottom: 483px solid rgba(232, 234, 236, 0.8);
   border-left: 1550px solid transparent;
   overflow: hidden; }
+  @media (max-width: 1430px) {
+    .aboutMe::after {
+      display: none; } }
 
 .aboutMe .aboutImage {
   width: 50%; }

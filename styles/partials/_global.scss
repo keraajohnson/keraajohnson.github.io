@@ -37,7 +37,7 @@ $hoverBackground: rgba(250,250,250,0.5);
 
 @mixin breakPoint($point) {
   @if $point == large {
-    @media (max-width: 1600px) { @content; }
+    @media (max-width: 1430px) { @content; }
   }
   @else if $point == medium {
     @media (max-width: 840px) { @content; }

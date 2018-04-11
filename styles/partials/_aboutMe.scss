@@ -1,5 +1,4 @@
 .aboutMe {
-	// margin-top: 75px;
 	overflow: hidden;
 			.flexBox {
 			display: flex;
@@ -59,9 +58,12 @@
 	height: 50%;
 	// border-top: 20px solid transparent;
 	border-right: 0px solid transparent;
-	border-bottom: 500px solid rgba(232,234,236,0.5);
+	border-bottom: 483px solid rgba(232,234,236,0.8);
 	border-left: 1550px solid transparent;
 	overflow: hidden;
+	@include breakPoint(large) {
+		display: none;
+	}
 }
 
 .aboutMe .aboutImage {
